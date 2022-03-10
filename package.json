@@ -1,30 +1,48 @@
 {
-  "name": "ethers-react",
-  "version": "1.0.0",
-  "description": "ethers-react is to facilitate the use of ethers in react JS, which is a library for interacting with Ethereum blockchain. It is very convenient for developers to develop Web3 related products",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wanghao12345/ethers-react.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wanghao12345/ethers-react/issues"
-  },
-  "homepage": "https://github.com/wanghao12345/ethers-react#readme",
-  "dependencies": {
-    "ethers": "^5.6.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "typescript": "^4.6.2"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.21",
-    "@types/react": "^17.0.39"
-  }
+    "name": "ethers-react",
+    "version": "1.0.6",
+    "description": "ethers-react is to facilitate the use of ethers in react JS, which is a library for interacting with Ethereum blockchain. It is very convenient for developers to develop Web3 related products",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "release": "npm publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wanghao12345/ethers-react.git"
+    },
+    "keywords": [
+        "ethers",
+        "react",
+        "react-dom"
+    ],
+    "author": "codingcoder",
+    "license": "ISC",
+    "typings": "dist/index.d.ts",
+    "bugs": {
+        "url": "https://github.com/wanghao12345/ethers-react/issues"
+    },
+    "homepage": "https://github.com/wanghao12345/ethers-react#readme",
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "dependencies": {
+        "ethers": "^5.6.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.21",
+        "@types/react": "^17.0.39",
+        "typescript": "^4.6.2"
+    }
 }

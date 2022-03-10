@@ -1,9 +1,20 @@
-import { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 export const useMetaMask = () => {
-    const [num, setNum] = useState(0);
+    // is installed wallet
+    const [isInstalledWallet, setIsInstalledWallet] = useState<boolean>(false);
+    // is connected wallet
+    const [isConnected, setIsConnected] = useState<boolean>(false);
+
+    useEffect(() => {
+        if (window.ethereum) {
+            setIsInstalledWallet(true)
+        }
+    })
+
+
     return {
-        num,
-        setNum
+        isInstalledWallet,
+        isConnected
     }
 }
