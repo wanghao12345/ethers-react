@@ -1,0 +1,30 @@
+{
+  "name": "ethers-react",
+  "version": "1.0.0",
+  "description": "ethers-react is to facilitate the use of ethers in react JS, which is a library for interacting with Ethereum blockchain. It is very convenient for developers to develop Web3 related products",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanghao12345/ethers-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wanghao12345/ethers-react/issues"
+  },
+  "homepage": "https://github.com/wanghao12345/ethers-react#readme",
+  "dependencies": {
+    "ethers": "^5.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.39"
+  }
+}
