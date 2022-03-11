@@ -1,9 +1,12 @@
 import type { NextPage } from 'next'
+import { useContext } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useMount, useMetaMask } from "ethers-react";
+import { useMount, useMetaMask, ProviderContext } from "ethers-react";
 const Home: NextPage = () => {
+    const { test } = useContext(ProviderContext);
+    console.log(test)
     const { isConnected, isInstalledWallet } = useMetaMask();
     useMount(() => {
         console.log('loading end....')
