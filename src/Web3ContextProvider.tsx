@@ -4,26 +4,26 @@ import React, {
     ReactNode,
     useContext,
     useState,
-  } from "react"
-  export type Props = {
+} from "react"
+export type Props = {
     children: ReactNode
-  }
+}
 
-  export type ContextValue = {
+export type ContextValue = {
     switchNetwork: (chainId: string) => Promise<void>
     wcConnect: () => void
     connectToMetamask: () => Promise<any>
-  }
+}
 
-  export const ProviderContext = createContext({})
-  export const Web3ContextProvider = ({ children }: Props) => {
+export const ProviderContext = createContext({})
+export const Web3ContextProvider = ({ children }: Props) => {
 
-  
+
     return (
-      <ProviderContext.Provider
-        value={{ test: '123' }}
-      >
-        {children}
-      </ProviderContext.Provider>
+        <ProviderContext.Provider
+            value={{ test: '123' }}
+        >
+            {children}
+        </ProviderContext.Provider>
     )
-  }
+}

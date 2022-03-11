@@ -4,7 +4,7 @@ export const useMetaMask = () => {
     // is installed wallet
     const [isInstalledWallet, setIsInstalledWallet] = useState<boolean>(false);
     // is connected wallet
-    const [isConnected, setIsConnected] = useState<boolean>(false);
+    const [isConnected, setIsConnected] = useState<boolean>(true);
 
     useEffect(() => {
         if (window.ethereum) {
