@@ -5,25 +5,32 @@ import React, {
     useContext,
     useState,
 } from "react"
+import {
+    useMetaMask
+} from './useMetaMask';
+import { useWeb3 } from './useWeb3';
 export type Props = {
-    children: ReactNode
+    children: ReactNode,
 }
 
 export type ContextValue = {
-    switchNetwork: (chainId: string) => Promise<void>
-    wcConnect: () => void
-    connectToMetamask: () => Promise<any>
+    connectedAccount: string;
+    balance: string | number;
 }
 
-export const ProviderContext = createContext({})
+export const Web3ProviderContext = createContext<ContextValue>({} as ContextValue)
+
 export const Web3ContextProvider = ({ children }: Props) => {
-
-
+    const { connectedAccount } = useMetaMask();
+    const { balance } = useWeb3();
     return (
-        <ProviderContext.Provider
-            value={{ test: '123' }}
+        <Web3ProviderContext.Provider
+            value={{ 
+                connectedAccount,
+                balance
+            }}
         >
             {children}
-        </ProviderContext.Provider>
+        </Web3ProviderContext.Provider>
     )
 }
