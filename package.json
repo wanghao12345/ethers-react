@@ -14,7 +14,10 @@
     "keywords": [
         "ethers",
         "react",
-        "react-dom"
+        "react-dom",
+        "typescript",
+        "ethereum",
+        "metamask"
     ],
     "author": "codingcoder",
     "license": "ISC",
