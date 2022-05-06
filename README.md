@@ -37,11 +37,11 @@ import { useContext } from 'react';
 import { Web3ProviderContext } from "ethers-react";
 
 function Component() {
-  	const { connectedAccount, balance } = useContext(Web3ProviderContext);
+    const { connectedAccount, balance } = useContext(Web3ProviderContext);
     return (
         <div>
-           	<p>your connected metaMask account: {connectedAccount}</p>
-        		<p>your account banlance: {balance}</p>
+            <p>your connected metaMask account: {connectedAccount}</p>
+            <p>your account banlance: {balance}</p>
         </div>
     )
 
@@ -58,7 +58,7 @@ export default Component
 import { useMetaMask } from "ethers-react";
 
 const { 
-  	isInstalledWallet, // Determine whether the wallet is installed
+    isInstalledWallet, // Determine whether the wallet is installed
     isConnected, // Determine whether the wallet is connected
     connectedAccount, // Metamask current connected account
     connectWallect // Connect metamask function
@@ -72,7 +72,7 @@ const {
 import { useWeb3 } from "ethers-react";
 
 const { 
-		balance, // Get your balance
+    balance, // Get your balance
     web3Provider // Get web3Provider
 } = useWeb3();
 ```
