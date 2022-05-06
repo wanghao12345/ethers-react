@@ -1068,10 +1068,10 @@ esutils@^2.0.2:
   resolved "https://registry.npmmirror.com/esutils/-/esutils-2.0.3.tgz"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
-ethers-react@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.npmjs.org/ethers-react/-/ethers-react-1.0.8.tgz#8d95881c29f4970c1dd3e3d5d0ea9e38cb940134"
-  integrity sha512-SbQvLNk9xsFUIugH7u87cjUBf11m2DZqIMkI4wrGCoqbTzLOTJEWHDmdh48/why8MQOPcGGJcCKRMOfYqBk+mA==
+ethers-react@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.npmmirror.com/ethers-react/-/ethers-react-1.0.9.tgz#1faaf1d42968c3e712c1946c2fd1bd15d9235a82"
+  integrity sha512-Umadj9LoKfg9TI1sd1dZHMTvCQAH7U2UG8/7WY3FtcnX1KmchXJnz9hIo4uGknLLQH/EUJXswjfF83IOlSHaeQ==
   dependencies:
     ethers "^5.6.0"
     react "^17.0.2"
