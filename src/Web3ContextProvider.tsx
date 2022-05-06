@@ -14,7 +14,7 @@ export type Props = {
 }
 
 export type ContextValue = {
-    connectedAccount: string;
+    connectedAccount: string | null;
     balance: string | number;
 }
 

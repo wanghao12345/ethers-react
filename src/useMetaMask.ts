@@ -24,7 +24,7 @@ export const useMetaMask = () => {
             if (!isInstalledWallet) {
                 return false;
             }
-            window.ethereum.on('accountsChanged', function (accounts) {
+            window.ethereum.on('accountsChanged', function (accounts: string []) {
                 if (accounts && accounts.length) {
                     setConnectedAccount(accounts[0])
                 } else {
@@ -43,7 +43,7 @@ export const useMetaMask = () => {
             if (!isInstalledWallet) {
                 return false;
             }
-            window.ethereum.on('chainChanged', function (_chainId) {
+            window.ethereum.on('chainChanged', function (_chainId: string) {
                 console.log('chainChanged:', parseInt(_chainId));
                 window.location.reload();
             });
